@@ -1,0 +1,16 @@
+<% unless locals.empty? %>
+  <h2><%=message%></h2>
+<%end%>
+<h1>Who Dis?</h1>
+  
+  <%@figure.titles.each do |title| %>
+    <h2><%=title.name%></h2>
+  <%end%>
+
+  <h3><%=@figure.name%></h3>
+
+  <%@figure.landmarks.each do |landmark| %>
+    <p><%=landmark.name%></p>
+  <%end%>
+
+
